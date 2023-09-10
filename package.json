@@ -29,6 +29,7 @@
     "express": "^4.18.2"
   },
   "devDependencies": {
-    "fix-esm-import-path": "^1.4.0"
+    "fix-esm-import-path": "^1.4.0",
+    "tsc": "^2.0.4"
   }
 }
