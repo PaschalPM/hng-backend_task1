@@ -7,7 +7,7 @@
   "scripts": {
     "build": "tsc",
     "dev": "nodemon --port 5000",
-    "start": "npx fix-esm-import-path ./dist/index.js && node ./dist/index.js",
+    "start": "npx fix-esm-import-path ./api/index.js && node ./api/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "exports": {
