@@ -8,10 +8,10 @@ const DAYS_OF_THE_WEEK = [
   "Saturday",
 ];
 
-export const getCurrentDay = () => {
+const getCurrentDay = () => {
   const date = new Date();
   const dayIdx = date.getDay();
   return DAYS_OF_THE_WEEK[dayIdx];
 };
 
-export default getCurrentDay
+module.exports = getCurrentDay

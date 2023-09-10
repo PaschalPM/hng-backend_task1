@@ -4,13 +4,8 @@
   "description": "HNG Backend Stage One Task",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
-    "dev": "nodemon --port 5000",
-    "start": "npx fix-esm-import-path ./api/index.js && node ./api/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "exports": {
-    "./dist/index.js": "./src/index.ts"
+    "dev": "nodemon ./api/index.js",
+    "start": "node ./api/index.js"
   },
   "repository": {
     "type": "git",

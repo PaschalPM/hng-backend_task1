@@ -1,6 +1,6 @@
-import getCurrentDay from "./current_day"
+const getCurrentDay = require("./current_day")
 
-const responseBody = (slack_name:string = "PaschalPM", track:string = "Backend")=> ({
+const responseBody = (slack_name = "PaschalPM", track = "Backend")=> ({
     slack_name,
     current_day: getCurrentDay(),
     utc_time: (new Date()).toISOString(),
@@ -10,4 +10,4 @@ const responseBody = (slack_name:string = "PaschalPM", track:string = "Backend")
     status_code: 200
 })
 
-export default responseBody
+module.exports =  responseBody
