@@ -11,8 +11,5 @@ app.get('/api', (req:Request, res:Response) => {
     res.setHeader('Cache-Control', 's-max-age=1, stale-while-revalidate')
     res.status(200).json(responseBody(slack_name, track))
 })
-app.listen(5000, ()=>{
-    console.log('Listening on port ',5000)
-})
 
 export default app
